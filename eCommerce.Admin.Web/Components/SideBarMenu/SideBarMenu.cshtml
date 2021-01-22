@@ -1,0 +1,18 @@
+@model eCommerce.Admin.Web.Models.SideBarMenu.LeftMenuModel
+
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">@Model.Title</div>
+    <div class="list-group list-group-flush">
+        @foreach (var item in Model.Items)
+        {
+            <a href="@item.Url" class="list-group-item list-group-item-action bg-light">@item.Name</a>
+        }
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+    </div>
+</div>
+
