@@ -6,7 +6,6 @@ import { createBrowserHistory } from 'history';
 import configureStore from './store/configureStore';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Wrapper from './components/siteWrapper'
 import './styles/style.scss'
 
 // Create browser history to use in the Redux store

@@ -1,15 +1,10 @@
 ﻿import * as React from 'react';
-import bannerImg from '../../content/img/banner_01.jpg';
 import '../../styles/style.scss';
 import MenuItem from "./MenuItem";
+import Banners from "../../components/productMenu/banners";
 
-interface IProps{
-    
-}
-
-interface IState{
-    
-}
+interface IProps{}
+interface IState{}
 
 export default class ProductMenu extends React.Component<IProps, IState>{
     constructor(props: IProps) {
@@ -27,16 +22,16 @@ export default class ProductMenu extends React.Component<IProps, IState>{
         return content;
     }
     
+    
+    componentDidMount() {
+        console.log("ProductMenu componentDidMount");
+    }
+
     render() {
         return (
             <React.Fragment>
-                <div className="banner">
-                    <div className="container">
-                        <div className="banner__body">
-                            <img src={bannerImg}/>
-                        </div>
-                    </div>
-                </div>
+                
+                <Banners/>
 
                 <div className="category__menu">
                     <div className="container">
