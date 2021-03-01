@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using eCommerce.Domain.Product;
-using eCommerce.Domain.Product.Enums;
+using eCommerce.Domain.Goods;
+using eCommerce.Domain.Goods.Enums;
 
 namespace eCommerce.Repositories.Interfaces
 {
